@@ -1,4 +1,4 @@
-var kashiwa_keys = [
+var aout_keylist = [
     "33",
     "63",
     "44",
@@ -39,12 +39,12 @@ function sendKey(key) {
     const event = new KeyboardEvent('keypress', { charCode: key })
     document.dispatchEvent(event)
 }
-function kashiwa() {
-    kashiwa_keys.forEach((key) => {
+function aout_type() {
+    aout_keylist.forEach((key) => {
         sendKey(key)
     }
     )
 }
 setInterval(()=>{
-    kashiwa()
+    aout_type()
 },25)
